@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 16) Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+
+        console.log("16) Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string:");
+        coun=0;
+        function se(z,g){
+            for(l=0;l<g.length;l++){
+               var h=g[l];
+                if(h==z){
+                    coun++;
+                }
+            }
+            console.log(coun);
+        }
+        se("i","kiwi")
+
+        // 17) Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+        console.log("17) Create a function that takes a string and returns the number (count) of vowels contained within it:");
+        var count1=0;
+        function s2(vow){
+            for(p=0;p<vow.length;p++){
+                vow[p]
+                if(vow[p]=="a" || vow[p]=="i"|| vow[p]=="o"|| vow[p]=="e"||vow[p]=="u"){
+                count1++;
+                }
+            }
+            console.log(count1);
+        }
+        s2("mississippi")
+
+        // 19)  Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.
+
+        console.log(" Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer:");
+        function ite(h){
+            for(i=1;i<=h;i++){
+                console.log(i*2);
+            }
+        }
+        ite(5)
+
+        // 20) Create Function that will take one parameter and return type of the data.
+
+        console.log("20) Create Function that will take one parameter and return type of the data:");
+        var tp="";
+        function type(val){
+            if(typeof(val)=="string"){
+                console.log(val + " is a character");
+            }
+            else if(typeof(val)=="number"){
+                console.log(val + " is a integer");
+            }
+            else{
+                console.log(val + " is neither a integer nor a character");
+            }
+        }
+        type(1)
+
+        // 21)  Program to find greatest of three numbers(using ternary operator).
+
+        console.log(" Program to find greatest of three numbers(using ternary operator):");
+        var s1=12;
+        var s2=34;
+        var s3=8;
+
+        var great =(s1>s2) ? ((s1>s3) ? s1:s3) : ((s2>s3)? s2:s3);
+        console.log(great + " is the greatest number" );
+
+        // 22) Program to find factorial of number.
+        var f2=8;
+        let fac=1;
+        for(i=1;i<=f2;i++){
+            fac =fac*i;
+        }
+        console.log(fac);
+
+        // 24) Write a program to  print triangle pattern numbers.
+
+        console.log("Write a program to  print triangle pattern numbers:");
+        var s1="";
+        for(i=1;i<=5;i++){
+            s1= s1+ " "+ i;
+            console.log(s1);
+        }
+
+        // 25) Program to Calculate the Power of a Number(using loop only).
+
+        console.log("Program to Calculate the Power of a Number(using loop only):");
+        function po2(p1,p2){
+            console.log(p1**p2);
+        }
+        po2(2,5)
+
+        // 26) Program to Check Whether a Number is Prime or Not
+
+        console.log("Program to Check Whether a Number is Prime or Not:");
+        var d90=4;
+        var fact=0;
+        for(d4=0;d4<=d90;d4++){
+            if(d90%d4==0){
+                fact++;
+            }
+        }
+        if(fact==2){
+            console.log(d90 + " is a prime number");
+        }
+        if(fact!=2){
+            console.log(d90 + " is not a prime number");
+        }
+
+        // 30) Program to count vowels and consonants in a given String.
+
+        console.log("Program to count vowels and consonants in a given String.:");
+        var codd="kiwi";
+        var vo_cou=0;
+        var c_co=0;
+        for(j7=0;j7<codd.length;j7++){
+            codd[j7]
+            if(codd[j7]=="a" || codd[j7]=="e" ||codd[j7]=="i" || codd[j7]=="o" || codd[j7]=="u"){
+                vo_cou++;
+            }
+            else{
+                c_co++;
+            }
+        }
+        console.log(vo_cou + " is the count of vowels ");
+        console.log(c_co + " is the count of consonants ");
+        
+    </script>
+</body>
+</html>
